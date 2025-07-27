@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>API Documentation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f7f9fc;
+      color: #333;
+      line-height: 1.6;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #1e3c72;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      color: #2a5298;
+    }
+
+    code {
+      font-family: monospace;
+    }
+    
+    /* Only inline code blocks (outside <pre>) get a light background */
+    p > code, li > code {
+      background-color: #eee;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+    }
+    
+    /* Preformatted blocks remain dark */
+    pre {
+      background: #1e1e1e;
+      color: #eee;
+      padding: 1rem;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+    
+    pre code {
+      background: none;
+      padding: 0;
+    }
+    
+
+    a.back {
+      display: inline-block;
+      margin-top: 2rem;
+      color: #2a5298;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a.back:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📘 API Documentation</h1>
+
+    <p>Welcome to the API docs for your project. Below you'll find the available endpoints and examples of how to use them.</p>
+
+    <h2>🔍 GET /status</h2>
+    <p>Returns the status of the server.</p>
+    <pre><code>curl http://yourdomain.com/status</code></pre>
+
+    <h2>📝 POST /submit</h2>
+    <p>Submits data to the server.</p>
+    <pre><code>
+curl -X POST http://yourdomain.com/submit \
+  -H "Content-Type: application/json" \
+  -d '{"name": "John", "email": "john@example.com"}'
+    </code></pre>
+
+    <h2>📦 Other Endpoints</h2>
+    <ul>
+      <li><code>GET /users</code> — List all users</li>
+      <li><code>GET /users/&lt;id&gt;</code> — Get user details</li>
+      <li><code>DELETE /users/&lt;id&gt;</code> — Delete a user</li>
+    </ul>
+
+    <a class="back" href="/">← Back to Home</a>
+  </div>
+</body>
+</html>
+
