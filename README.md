@@ -6,7 +6,7 @@ A basic implementation in RUST of a HTTP/1.1 server to serve web files
 
 You can set custom variables:
 
-* `SERVER_ADDR`: The server address. By default `127.0.0.1:9090`
+* `SERVER_ADDRESS`: The server address. By default `127.0.0.1:9090`
 * `PUBLIC_PATH`: Where the files of the server are read from. By default `public`
 
 ## To Do
